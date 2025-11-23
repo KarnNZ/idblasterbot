@@ -564,7 +564,6 @@ async def mode_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
 
 
-# 🔁 /clean command
 async def clean_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
     Delete recent bot messages in this chat.
@@ -606,9 +605,8 @@ async def clean_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await _reply_in_same_place(
         update,
         context,
-        f"🧹 Cleaned <b>{deleted</b> bot messages in this chat.",
+        f"🧹 Cleaned <b>{deleted}</b> bot messages in this chat.",
     )
-
 
 # Optional: raw debug handler (commented out by default)
 async def debug_all(update: Update, context: ContextTypes.DEFAULT_TYPE):
